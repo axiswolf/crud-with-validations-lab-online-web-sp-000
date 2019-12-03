@@ -22,7 +22,7 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
   end
 
-  def update 
+  def update
     @song = Song.find(params[:id])
     @song.update(song_params)
     if @song.valid?
@@ -32,7 +32,7 @@ class SongsController < ApplicationController
       render :edit
     end
   end
-  
+
   private
 
     def set_song
