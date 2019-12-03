@@ -1,5 +1,8 @@
 class SongsController < ApplicationController
-
+  configure do
+      set :views, 'app/views'
+  end
+  
   def create
     @song = Song.new(song_params)
     if @song.valid?
