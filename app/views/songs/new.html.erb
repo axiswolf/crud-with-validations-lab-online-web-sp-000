@@ -1,4 +1,4 @@
-<%= form_tag "/song" do %>
+<%= form_tag song_path(@song), method: "post", name: "new_song", id: "new_song" do %>
 Name: <%= text_field_tag "title", @song.title %> <br>
 Release Year: <%= text_field_tag "release_year", @song.release_year %> <br>
 Artist Name: <%= text_field_tag "artist_name", @song.artist_name %> <br>
