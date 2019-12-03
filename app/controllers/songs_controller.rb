@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def create
-    @song = Song.new()
+    @song = Song.new(song_params)
   end
 
   def index
